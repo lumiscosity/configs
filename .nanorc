@@ -1,0 +1,46 @@
+# MAPLE's TOTALLY ORIGINAL nanorc
+
+set tabsize 4
+set softwrap
+set linenumbers
+unset mouse
+set atblanks
+set showcursor
+set nohelp
+#set morespace
+set constantshow
+set zap
+set wordbounds
+set positionlog
+set afterends
+set minibar
+set indicator
+
+set tabstospaces
+
+# keybindings
+bind ^X exit all
+bind ^S savefile all
+bind ^F whereis all
+bind ^C cancel all
+bind ^C copy main
+bind ^K cut all
+bind ^V paste all
+bind ^L linter all
+bind ^Z undo all
+bind ^Y redo all
+bind M-U undo all
+bind M-Y redo all
+
+# colors
+set titlecolor magenta,black
+set statuscolor normal,normal
+set stripecolor normal,normal
+set selectedcolor brightmagenta,normal
+set functioncolor normal,normal
+set keycolor normal,normal
+set errorcolor brightred
+set numbercolor ,normal
+set stripecolor ,#444
+set numbercolor gray
+set scrollercolor magenta,black
