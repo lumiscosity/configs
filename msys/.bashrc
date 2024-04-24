@@ -64,3 +64,21 @@ aliaslist() {
     echo "$(tput bold)test$(tput sgr0) - cargo test --doc alias that takes a folder location"
     echo "$(tput bold)yeet$(tput sgr0) - remove a package"
 }
+
+mitt() {
+    if [[ "$1" == "push" ]]; then
+        git add -A
+        if [[ "$2" ]]; then
+            git commit -m "$2"
+        else
+            git commit -m "-"
+        fi
+        git push
+    elif [[ "$1" == "pull" ]]; then
+        git pull -f
+    elif [[ "$1" ]]; then
+        echo "Invalid command!"
+    else
+        echo "No arguments provided!"
+    fi
+}
